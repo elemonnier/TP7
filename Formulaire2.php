@@ -7,9 +7,9 @@ class Formulaire {
         echo "<form method='".$method."' action='".$nomFichier."'>";
     }
     public function ajouterZoneTexte($text = 'text'){
-        echo "<strong>$text"." </strong>";
-        echo "<input type='text'>";
-        echo "<br><br>";
+        echo "<strong>$text"." </strong>
+              <input type='text'>
+              <br><br>";
     }
     public function ajouterBouton($text = 'text'){
         echo "<input type='submit' value='".$text."'>";
@@ -20,10 +20,21 @@ class Formulaire {
 }
 
 class Formulaire2 extends Formulaire {
-    public function ajouterCaseACocher(){
-
+    public function ajouterCaseACocher($text = "text"){
+        echo "<input type='checkbox'>  ".$text;
     }
-    public function ajouterBoutonRadio(){
-
+    public function ajouterBoutonRadio($text = "text"){
+        echo "<input type='radio' name='a'>  ".$text;
     }
 }
+
+$form2 = new Formulaire2();
+$form2->ajouterZoneTexte("Votre nom :");
+$form2->ajouterZoneTexte("Votre code : ");
+$form2->ajouterBouton("Envoyer");
+$form2->ajouterBoutonRadio("Homme");
+$form2->ajouterBoutonRadio("Femme");
+$form2->ajouterCaseACocher("Tennis");
+$form2->ajouterCaseACocher("Equitation");
+
+?>
