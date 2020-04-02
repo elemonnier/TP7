@@ -12,7 +12,7 @@ class Square extends Shape {
         $this->height = $height;
     }
     public function getArea() {
-        echo "Square area : ".($this->width * $this->height)."<br>";
+        echo " area : ".($this->width * $this->height)."<br>";
     }
 }
 
@@ -22,7 +22,7 @@ class Circle extends Shape {
         $this->radius = $radius;
     }
     public function getArea() {
-        echo "Circle area : ".($this->radius * 2 * pi())."<br>";
+        echo " area : ".($this->radius * 2 * pi())."<br>";
     }
 }
 
@@ -30,5 +30,6 @@ $square = new Square();
 $circle = new Circle();
 $tab = array($square, $circle);
 for ($i = 0; $i < count($tab); $i++){
+    echo get_class($tab[$i]);
     $tab[$i]->getArea();
 }
