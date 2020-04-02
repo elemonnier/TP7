@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="ddc72f63-db36-4342-9ae0-9771157f074f" name="WSL" url="http://http://localhost/PHP/TP7/">
+      <webServer id="14ae8c97-2902-42a1-ae98-8c1a457ed753" name="WSL" url="http://localhost/PHP/TP7/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
     </option>
